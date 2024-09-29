@@ -7,7 +7,10 @@ const GameScreen = ({ character }) => {
         // Implement your choice logic here
         if (choice === "talk") {
             setStory("You talked to " + character.name + ".");
+        }else if (choice === "walk") {
+            setStory("You walked away from " + character.name + ".");
         }
+
     };
 
     return (
